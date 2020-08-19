@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     box-sizing: border-box;
     background: black;
@@ -35,7 +38,7 @@ img{
     .entrada{
         flex: 0 1 calc(50% - 1rem);
     }
-    footer{
+    .logo{
         display: flex;
         justify-content: center;
     }
@@ -44,7 +47,7 @@ img{
     .entrada{
         flex: 0 1 calc(25% - 1.5rem);
     }
-    footer{
+    .logo{
         display: flex;
         justify-content: center;
     }
@@ -81,13 +84,61 @@ img{
     transition-duration: 500ms;
 }
 
-footer{
+.logo{
     display: flex;
     justify-content: center;
 }
 
-footer img{
+.logo img{
     width: 5%;
     margin-top: 1rem;
     margin-bottom: 2rem;
+}
+
+.sociales ul li span{
+    display: none;
+}
+
+.sociales ul li{
+    list-style: none;
+    border-bottom: none;
+}
+
+.sociales ul li a{
+    text-decoration: none;
+    display: flex;
+    margin: 2rem;
+}
+
+.sociales ul{
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+.sociales ul{
+    font-family: "Font Awesome 5 Brands";
+}
+
+.sociales ul li a[href*='github.com/GonzaloGC']::before{
+    content: "\f09b";
+    color: white;
+    font-size: 2rem;
+    
+}
+.sociales ul li a[href*='linkedin.com/in/gonzalo-guerrero/']::before{
+    content: "\f08c";
+    color: white;
+    font-size: 2rem;
+}
+.sociales ul li a[href*='twitter.com/gonzaloelias']::before{
+    content: "\f081";
+    color: white;
+    font-size: 2rem;
+}
+.sociales ul li a[href*='500px.com/gguerrero']::before{
+    content: "\f26e";
+    color: white;
+    font-size: 2rem;
 }
